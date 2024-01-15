@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-    background-color: pink;
+    background-color: #333c42;
     
 }
 
@@ -27,18 +28,18 @@ header {
 
 .logo {
     font-size: 2em;
-    color:#000;
+    color:#fffefb;
     cursor: default;
 }
 
 .logo span {
-    color:#fff;
+    color:#ee567d;
 
 }
 
 .navbar a {
     font-size: 1.1em;
-    color: #000;
+    color: #fffefb;
     text-decoration: none;
     margin-right: 40px;
     font-weight: 500px;
@@ -46,24 +47,24 @@ header {
 }
 
 .navbar a:hover {
-    color: #fff;
+    color: #ee567d;
 
 }
 
 .connect-btn {
-    color: #fff;
+    color: #fffefb;
     text-decoration: none;
     padding: 8px 35px;
-    background: #000;
+    background: #ee567d;
     border-radius: 10px;
-    border: 2px solid #000;
+    border: 2px solid #ee567d;
     font-weight: 500;
     transition: .3s;
 }
 
 .connect-btn:hover{
     background: transparent;
-    color: #000;
+    color: #ee567d;
 }
 
 .home {
@@ -72,71 +73,71 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 50px 200px;
+    padding: 80px 200px;
 
 
 }
 
 .introduction {
-    max-width: 800px;
-    color: #000;
-
+    max-width: 900px;
+    color: #fffefb;
+    
 }
 
-.introduction h1 {
+.intro-1 {
     font-size: 3em;
 }
 
-.introduction h1 span {
-    color: #fff;
+.intro-1 span {
+    color: #ee567d;
 
 }
 
-.introduction h3 {
+.intro-2 {
     font-size: 2em;
 }
 
-.introduction p {
+.catchphrase {
     padding: 10px 0 40px 0;
 }
 
 .btns-group a {
     
-    color: #fff;
+    color: #fffefb;
     text-decoration: none;
     padding: 10px 40px;
-    background: #000;
+    background: #ee567d;
     border-radius: 10px;
-    border: 2px solid #000;
+    border: 2px solid #ee567d;
     font-weight: 500;
     transition: .3s;
 }
 
 .btns-group a:nth-child(2) {
-    color: #000;
+    color: #fffefb;
     background: transparent;
     margin-left: 30px;
     padding: 10px 30px;
 }
 
 .btns-group a:nth-child(3) {
-    color: #000;
+    color: #fffefb;
     background: transparent;
     margin-left: 30px;
     padding: 10px 30px;
 }
 
 .btns-group a:hover:nth-child(1){
-    color:#000;
+    color:#ee567d;
     background: transparent;
 }
 
 .btns-group a:hover:nth-child(2){
-    color:#fff;
-    background-color: #000;
+    color:#fffefb;
+    background-color: #ee567d;
 }
 
 .btns-group a:hover:nth-child(3){
-    color:#fff;
-    background-color: #000;
+    color:#fffefb;
+    background-color: #ee567d;
 }
