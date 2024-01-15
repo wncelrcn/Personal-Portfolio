@@ -10,8 +10,18 @@
 
 body {
     background-color: #333c42;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
     
 }
+
+body::-webkit-scrollbar {
+    display: none;
+    
+}
+
+
 
 /*-------------header & navbar --------------*/
 header {
@@ -75,8 +85,6 @@ header {
 /*connect button on hover*/
 .connect-btn:hover {
     background: transparent;
-    color: #ee567d;
-    
 }
 
 /*-------------home--------------*/
@@ -93,13 +101,15 @@ header {
 }
 /*intro section*/
 .introduction {
-    max-width: 900px;
+    max-width: 1000px;
     color: #fffefb;
+    padding: 20px;
     
 }
 /*hi, i'm */
 .intro-1 {
     font-size: 3em;
+    padding: 0px 58px;
 }
 
 /*hi, i'm */
@@ -111,11 +121,21 @@ header {
 /*hi, i'm */
 .intro-2 {
     font-size: 2em;
+    padding: 0px 58px;
 }
 
 /*short description */
 .catchphrase {
-    padding: 10px 0 40px 0;
+    padding: 15px 40px 30px 58px;
+    
+}
+
+.btns-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
 }
 
 /*buttons design*/
@@ -131,39 +151,46 @@ header {
     transition: .5s;
 }
 
-/*2nd button*/
-.btns-group a:nth-child(2) {
-    color: #fffefb;
+.btns-group a:hover {
     background: transparent;
+}
+
+
+/*1st button*/
+.email-btn1 {
     margin-left: 30px;
     padding: 10px 30px;
+    transition: .5s;
+}
+
+.email-btn1:hover{
+    transform: translateY(-5px);
     
 }
 
-/*3rd button*/
-.btns-group a:nth-child(3) {
-    color: #fffefb;
-    background: transparent;
+
+/*2nd button*/
+.github-btn1 {
     margin-left: 30px;
     padding: 10px 30px;
-}
-
-/*1st button on hover*/
-.btns-group a:hover:nth-child(1) {
-    color:#ee567d;
+    transition: .5s;
     background: transparent;
 }
 
-/*2nd button on hover*/
-.btns-group a:hover:nth-child(2) {
-    color:#fffefb;
-    background-color: #ee567d;
+.github-btn1:hover {
+    transform: translateY(-5px);
 }
 
-/*3rd button on hover*/
-.btns-group a:hover:nth-child(3) {
-    color:#fffefb;
-    background-color: #ee567d;
+
+/*2nd button*/
+.linkedin-btn1 {
+    margin-left: 30px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.linkedin-btn1:hover {
+    transform: translateY(-5px);
 }
 
 
@@ -273,4 +300,160 @@ header {
 .skills-list i {
     font-size: 50px;
     margin-bottom: 30px;
+}
+
+
+
+/*-------------portfolio--------------*/
+
+/*projects section*/
+.my-portfolio {
+    position:relative;
+    height: 100vh;
+    padding:120px 200px;
+}
+
+.portfolio-title {
+    font-size: 60px;
+    font-weight: 600;
+    color:#ee567d;
+}
+
+
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color:#fffefb;
+}
+
+
+/*skills design*/
+.project-list div {
+    border-radius: 10px;
+    border: 2px solid #ee567d;
+    background: transparent;
+    padding: 40px;
+    font-weight: 300;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.proj {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.proj img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------connect with me--------------*/
+
+.my-contact {
+    position:relative;
+    height: 100vh;
+    padding:200px 200px;
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text inside .my-contact */
+    
+}
+
+.contact-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #ee567d;
+    margin: 0; 
+}
+
+.contact-catchphrase {
+    color: #fffefb;
+    font-weight: 20;
+    padding: 5px;
+}
+
+.con-desc {
+    color: #fffefb;
+    padding: 10px;
+}
+
+
+.con-btns {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*buttons design*/
+.con-btns a {
+    
+    color: #fffefb;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #ee567d;
+    border-radius: 10px;
+    border: 2px solid #ee567d;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.con-btns a:hover {
+    background: transparent;
+}
+
+
+/*1st button*/
+.email-btn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.email-btn:hover{
+    transform: translateY(-5px);
+}
+
+
+/*2nd button*/
+.github-btn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.github-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+/*2nd button*/
+.linkedin-btn {
+    margin-left: 30px;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.linkedin-btn:hover {
+    transform: translateY(-5px);
 }
