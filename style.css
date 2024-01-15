@@ -13,7 +13,7 @@ body {
     
 }
 
-
+/*-------------header & navbar --------------*/
 header {
     position: fixed;
     top: 0;
@@ -24,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #333c42;
 }
 
 .logo {
@@ -37,7 +38,7 @@ header {
 
 }
 
-.navbar a {
+.navbar ul li a {
     font-size: 1.1em;
     color: #fffefb;
     text-decoration: none;
@@ -45,6 +46,13 @@ header {
     font-weight: 500px;
     transition: .3s;
 }
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
 
 .navbar a:hover {
     color: #ee567d;
@@ -62,11 +70,12 @@ header {
     transition: .3s;
 }
 
-.connect-btn:hover{
+.connect-btn:hover {
     background: transparent;
     color: #ee567d;
 }
 
+/*-------------home--------------*/
 .home {
     position:relative;
     width: 125%;
@@ -127,17 +136,56 @@ header {
     padding: 10px 30px;
 }
 
-.btns-group a:hover:nth-child(1){
+.btns-group a:hover:nth-child(1) {
     color:#ee567d;
     background: transparent;
 }
 
-.btns-group a:hover:nth-child(2){
+.btns-group a:hover:nth-child(2) {
     color:#fffefb;
     background-color: #ee567d;
 }
 
-.btns-group a:hover:nth-child(3){
+.btns-group a:hover:nth-child(3) {
     color:#fffefb;
     background-color: #ee567d;
+}
+
+
+/*-------------about me--------------*/
+
+.about {
+    padding: 80px 200px;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    
+}
+.about-col-1 img {
+    width: 125%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 50%;
+}
+
+.about-title {
+    font-size: 60px;
+    font-weight: 600;
+    color:#ee567d;
+}
+
+.desc {
+    color:#fffefb;
+    padding: 50px 0;
 }
