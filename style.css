@@ -26,39 +26,42 @@ header {
     z-index: 100;
     background-color: #333c42;
 }
-
+/*name logo*/
 .logo {
     font-size: 2em;
     color:#fffefb;
     cursor: default;
 }
-
+/*name logo*/
 .logo span {
     color:#ee567d;
 
 }
 
+/*navigation bar*/
 .navbar ul li a {
     font-size: 1.1em;
     color: #fffefb;
     text-decoration: none;
     margin-right: 40px;
     font-weight: 500px;
-    transition: .3s;
+    transition: .5s;
 }
-
+/*navigation bar layout*/
 .navbar ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-
+/*navigation bar on hover*/
 .navbar a:hover {
     color: #ee567d;
+    
 
 }
 
+/*connect button*/
 .connect-btn {
     color: #fffefb;
     text-decoration: none;
@@ -67,15 +70,17 @@ header {
     border-radius: 10px;
     border: 2px solid #ee567d;
     font-weight: 500;
-    transition: .3s;
+    transition: .5s;
 }
-
+/*connect button on hover*/
 .connect-btn:hover {
     background: transparent;
     color: #ee567d;
+    
 }
 
 /*-------------home--------------*/
+/*home section*/
 .home {
     position:relative;
     width: 125%;
@@ -86,30 +91,34 @@ header {
 
 
 }
-
+/*intro section*/
 .introduction {
     max-width: 900px;
     color: #fffefb;
     
 }
-
+/*hi, i'm */
 .intro-1 {
     font-size: 3em;
 }
 
+/*hi, i'm */
 .intro-1 span {
     color: #ee567d;
 
 }
 
+/*hi, i'm */
 .intro-2 {
     font-size: 2em;
 }
 
+/*short description */
 .catchphrase {
     padding: 10px 0 40px 0;
 }
 
+/*buttons design*/
 .btns-group a {
     
     color: #fffefb;
@@ -119,16 +128,19 @@ header {
     border-radius: 10px;
     border: 2px solid #ee567d;
     font-weight: 500;
-    transition: .3s;
+    transition: .5s;
 }
 
+/*2nd button*/
 .btns-group a:nth-child(2) {
     color: #fffefb;
     background: transparent;
     margin-left: 30px;
     padding: 10px 30px;
+    
 }
 
+/*3rd button*/
 .btns-group a:nth-child(3) {
     color: #fffefb;
     background: transparent;
@@ -136,16 +148,19 @@ header {
     padding: 10px 30px;
 }
 
+/*1st button on hover*/
 .btns-group a:hover:nth-child(1) {
     color:#ee567d;
     background: transparent;
 }
 
+/*2nd button on hover*/
 .btns-group a:hover:nth-child(2) {
     color:#fffefb;
     background-color: #ee567d;
 }
 
+/*3rd button on hover*/
 .btns-group a:hover:nth-child(3) {
     color:#fffefb;
     background-color: #ee567d;
@@ -154,11 +169,16 @@ header {
 
 /*-------------about me--------------*/
 
+/*about section*/
 .about {
-    padding: 80px 200px;
+    padding: 120px 200px;
+    align-items: flex-start;
+    position:relative;
+    display: flex;
     color: #ababab;
 }
 
+/*row section*/
 .row {
     display: flex;
     justify-content: space-between;
@@ -169,23 +189,88 @@ header {
     flex-basis: 35%;
     
 }
+
+/*image*/
 .about-col-1 img {
     width: 125%;
     border-radius: 15px;
+    transition: .5s;
 
 }
 
+/*image on hover*/
+.about-col-1 img:hover {
+    transform: translateY(-10px);
+}
+
+/*about (text section)*/
 .about-col-2 {
     flex-basis: 50%;
 }
 
+/*about title */
 .about-title {
     font-size: 60px;
     font-weight: 600;
     color:#ee567d;
 }
 
+/*description */
 .desc {
     color:#fffefb;
     padding: 50px 0;
+}
+
+
+/*-------------skills--------------*/
+
+/*skills section*/
+.my-skills {
+    position:relative;
+    height: 100vh;
+    padding:120px 200px;
+}
+
+/*skills title text*/
+.skills-title {
+    font-size: 60px;
+    font-weight: 600;
+    color:#ee567d;
+}
+
+/*skills grid layout*/
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color:#fffefb;
+}
+
+/*name of the skill*/
+.skillname {
+    color:#fffefb;
+}
+
+/*skills design*/
+.skills-list div {
+    border-radius: 10px;
+    border: 2px solid #ee567d;
+    background: transparent;
+    padding: 40px;
+    font-weight: 300;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/*skills on hover*/
+.skills-list div:hover {
+    color:#fffefb;
+    background-color: #ee567d;
+    transform: translateY(-10px);
+}
+
+/*skill icon design*/
+.skills-list i {
+    font-size: 50px;
+    margin-bottom: 30px;
 }
