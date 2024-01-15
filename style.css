@@ -330,15 +330,6 @@ header {
 }
 
 
-/*skills design*/
-.project-list div {
-    border-radius: 10px;
-    border: 2px solid #ee567d;
-    background: transparent;
-    padding: 40px;
-    font-weight: 300;
-    transition: background 0.5s, transform 0.5s;
-}
 
 .proj {
     border-radius: 10px;
@@ -350,13 +341,50 @@ header {
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
 
+.projname {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
 
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),#ee567d);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size:14px;
+    transition: height 0.5s;
+}
 
+.layer a {
+    margin-top: 15px;
+    color:#fffefb;
+    font-size: 12px;
+    text-decoration: none;
 
+}
 
+.proj:hover img {
+    transform: scale(1.1);
+}
 
+.proj:hover .layer {
+    height: 100%;
+}
 
 
 
