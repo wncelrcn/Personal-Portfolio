@@ -13,60 +13,46 @@
 <body>
 
     <!-------------header & navbar -------------->
-    <header>
-        <h2 class = "logo"><span>W</span>ince.</h2>
-        <nav class = "navbar">
-            <ul>
-                <li><a href = "#home">Home</a></li>
-                <li><a href = "#about">About Me</a></li>
-                <li><a href = "#skills">Skills</a></li>
-                <li><a href = "#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="connect-btn">Connect with me</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src = "images/logo.png" class = "logo ">
+                <ul id = "sidebar">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About Me</a></li>
+                    <li><a href = "#skills">Skills</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Connect</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closesidebar()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "opensidebar()"></i>
+            </nav>
 
 
     <!-------------home-------------->
-    <section class="home", id = "home">
-        <div class = "introduction">
-            <h1 class = "intro-1">Hi, I'm <span>Wince Larcen.</span></h1>
-            <h3 class = "intro-2">A 2nd Year B.S. Computer Science student in <br>Mapúa Malayan Colleges Laguna.</h3>
-            <p class = "catchphrase">Solving puzzles in code, creating solutions in pixels.</p>
-            <div class="btns-group">
-                <div class="email-btn1">
-                    <a href="mailto:rivanowincelarcen@gmail.com">
-                        <i class="far fa-envelope"></i> Email
-                    </a>
-                </div>
-                <div class="github-btn1">
-                    <a href="https://github.com/wncelrcn" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                <div class="linkedin-btn1">
-                    <a href="https://www.linkedin.com/in/wincelarcen/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
+            <div class="header-text">
+                <p>A 2nd Year BS Computer Science Student</p>
+                <h1>Hi, I'm <span>Wince Larcen.</span></h1>
+                <p class = "catchphrase">Solving puzzles in code, creating solutions in pixels.</p>
             </div>
-            
-
         </div>
 
-    </section>
+    </div>
 
+
+    
 
 
     <!-------------about-------------->
-    <section class = "about", id = "about">
+    <div id = "about">
+
         <div class = "container">
             <div class="row">
                 <div class="about-col-1">
                     <img class = "me", src="images/user.png" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="about-title">About Me</h1>
+                    <h1 class="subtitle">About Me</h1>
                     <p class = "desc">I am currently a 2nd Year Computer Science Student at Mapúa Malayan Colleges Laguna. <br>
                         <br>
                         🚀 I'm an aspiring Software Engineer, Fullstack Web Developer, and Data Scientist! 🚀 <br> 
@@ -79,68 +65,75 @@
 
                 </div>
             </div>
-
         </div>
+    </div>
+    
         
-
-    </section>
-
-
+        
     <!-------------skills-------------->
-    <section class = "skills", id = "skills">
-        <div class="my-skills">
-            <h1 class = "skills-title">My Skills</h1>
+
+
+
+    <div id = "skills">
+        <div class="container">
+            <h1 class="subtitle">My Skills</h1>
             <div class="skills-list">
                 <div class = "webdev">
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-brands fa-html5"></i>
                     <h2 class = "skillname">Fullstack Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p><br>☑ HTML<br>
+                        ☑ CSS <br>
+                        ☑ JavaScript <br>
+                        ☑ SQL
+                    
+                    </p>
                     
                 
                 </div>
                 <div class = "appdev">
                     <i class="fa-brands fa-app-store"></i>
                     <h2 class = "skillname">Application Development</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p><br>☑ C#<br>
+                        ☑ C++ <br>
+                        ☑ Python Tkinter
+                    </p>
                     
-                
+                    
                 </div>
                 
                 <div class = "ui">
                     <i class="fa-brands fa-figma"></i>
                     <h2 class = "skillname">UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p><br>☑ Figma<br>
+                        ☑ Photoshop <br>
+                        ☑ Illustrator <br>
+                        ☑ Prototyping <br>
+                        ☑ Wireframing
+                    </p>
                     
                 
                 </div>
 
-                <div class = "machinelearning">
-                    <i class="fa-solid fa-brain"></i>
-                    <h2 class = "skillname">Machine Learning</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    
-                
-                </div>
-
-                
-                
             </div>
+
         </div>
 
+    </div>
 
-    </section>
+    
 
     <!-------------portfolio-------------->
 
-    <section class = "portfolio", id = "portfolio">
-        <div class="my-portfolio">
-            <h1 class = "portfolio-title">My Projects</h1>
+
+    <div id = "portfolio">
+        <div class="container">
+            <h1 class = "subtitle">My Projects</h1>
             <div class="project-list">
                 <div class="proj">
                     <img src = "images/4pics.png">
                     <div class="layer">
                         <h3 class = "projname">4Pics 1Word - Python Edition</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Our Final Project for IT101-2L, A 4 Pics 1 Word Game using OOP Principles & Python Tkinter</p>
                         <a href = "https://github.com/wncelrcn/IT101-2L_4Pics-1-Word">View the project on: <br><i class="fa-brands fa-github"></i></a>
                     </div>
                     
@@ -150,7 +143,7 @@
                     <img src = "images/bus tap.png">
                     <div class="layer">
                         <h3 class = "projname">MMCL Bus Tap</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Our Final Project For CS110P, a Unified Shuttle Service Booking Mobile Application for Mapúa MCL students</p>
                         <a href = "https://www.figma.com/proto/oNrph44LtbwUmXTyAKSWac/Mapua-MCL-Bus-Tap?page-id=403%3A1650&type=design&node-id=434-1920&viewport=323%2C92%2C0.02&scaling=scale-down&starting-point-node-id=434%3A1920&show-proto-sidebar=1&mode=design&t=qLHViUeHiOUDu1ON-1">View the project on: <br><i class="fa-brands fa-figma"></i></a>
                     </div>
                 </div>
@@ -159,7 +152,7 @@
                     <img src = "images/pixelquest.png">
                     <div class="layer">
                         <h3 class = "projname">Pixel Quest</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>"Pixel Quest: Lost in the Labyrinth" is a classic 2D adventure game that takes players through a series of intricate mazes with challenges, mini-games, and secrets. </p>
                         <a href = "https://github.com/wncelrcn/IT111L_PixelMazeGame">View the project on: <br><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
@@ -168,7 +161,7 @@
                     <img src = "images/portfolio.png">
                     <div class="layer">
                         <h3 class = "projname">Personal Website</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>A website that showcases my skills, accomplished projects and porfolio</p>
                         <a href = "https://github.com/wncelrcn/wncelrcn.github.io">View the project on: <br><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
@@ -177,7 +170,9 @@
             </div>
 
         </div>
-    </section>
+    </div>
+
+
 
 
 
@@ -185,8 +180,8 @@
 
 
     <!-------------connect with me-------------->
-    <section class = "contact", id = "contact">
-        <div class="my-contact">
+    <div id = "contact">
+        <div class="container">
             <h1 class = "contact-title">
                 Connect with Me
             </h1>
@@ -217,11 +212,22 @@
                 
             </div>
         </div>
+    </div>
+
+    <!----------------javascript for hamburger functionality------------>
+    <script>
+        var sidebar = document.getElementById("sidebar");
 
 
+        function opensidebar(){
+            sidebar.style.right="0";
+        }
 
+        function closesidebar(){
+            sidebar.style.right="-200px";
+        }
 
-    </section>
+    </script>
 
 
 

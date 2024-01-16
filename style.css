@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -24,184 +29,80 @@ body::-webkit-scrollbar {
 
 
 /*-------------header & navbar --------------*/
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    padding: 30px 100px;
+
+#header {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    background-color: #333c42;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-/*name logo*/
+
 .logo {
-    font-size: 2em;
-    color:#fffefb;
-    cursor: default;
-}
-/*name logo*/
-.logo span {
-    color:#ee567d;
-
+    width: 140px;
 }
 
-/*navigation bar*/
-.navbar ul li a {
-    font-size: 1.1em;
-    color: #fffefb;
-    text-decoration: none;
-    margin-right: 40px;
-    font-weight: 500px;
-    transition: .5s;
-}
-/*navigation bar layout*/
-.navbar ul li {
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-/*navigation bar on hover*/
-.navbar a:hover {
-    color: #ee567d;
-    
-
-}
-
-/*connect button*/
-.connect-btn {
-    color: #fffefb;
+nav ul li a {
+    color:#fffefb;
     text-decoration: none;
-    padding: 8px 35px;
-    background: #ee567d;
-    border-radius: 10px;
-    border: 2px solid #ee567d;
-    font-weight: 500;
-    transition: .5s;
+    font-size: 18px;
+    transition: 0.5s;
 }
-/*connect button on hover*/
-.connect-btn:hover {
-    background: transparent;
+
+nav ul li a:hover{
+    color:#ee567d;
+    
 }
+
+
 
 /*-------------home--------------*/
-/*home section*/
-.home {
-    position:relative;
-    width: 125%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 80px 200px;
 
-
-}
-/*intro section*/
-.introduction {
-    max-width: 1000px;
-    color: #fffefb;
-    padding: 20px;
-    
-}
-/*hi, i'm */
-.intro-1 {
-    font-size: 3em;
-    padding: 0px 58px;
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    color:#fffefb;
 }
 
-/*hi, i'm */
-.intro-1 span {
-    color: #ee567d;
-
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    color:#fffefb;
 }
 
-/*hi, i'm */
-.intro-2 {
-    font-size: 2em;
-    padding: 0px 58px;
+.header-text h1 span {
+    color:#ee567d;
 }
 
-/*short description */
+
 .catchphrase {
-    padding: 15px 40px 30px 58px;
-    
+    font-size: 20px;
+    margin-top: 15px;
+    color:#fffefb;
 }
 
-.btns-group {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-}
-
-/*buttons design*/
-.btns-group a {
-    
-    color: #fffefb;
-    text-decoration: none;
-    padding: 10px 40px;
-    background: #ee567d;
-    border-radius: 10px;
-    border: 2px solid #ee567d;
-    font-weight: 500;
-    transition: .5s;
-}
-
-.btns-group a:hover {
-    background: transparent;
-}
-
-
-/*1st button*/
-.email-btn1 {
-    margin-left: 30px;
-    padding: 10px 30px;
-    transition: .5s;
-}
-
-.email-btn1:hover{
-    transform: translateY(-5px);
-    
-}
-
-
-/*2nd button*/
-.github-btn1 {
-    margin-left: 30px;
-    padding: 10px 30px;
-    transition: .5s;
-    background: transparent;
-}
-
-.github-btn1:hover {
-    transform: translateY(-5px);
-}
-
-
-/*2nd button*/
-.linkedin-btn1 {
-    margin-left: 30px;
-    padding: 10px 30px;
-    transition: .5s;
-}
-
-.linkedin-btn1:hover {
-    transform: translateY(-5px);
-}
 
 
 /*-------------about me--------------*/
 
 /*about section*/
-.about {
-    padding: 120px 200px;
-    align-items: flex-start;
-    position:relative;
-    display: flex;
+#about {
+    padding: 80px 0;
     color: #ababab;
 }
 
@@ -235,8 +136,8 @@ header {
     flex-basis: 50%;
 }
 
-/*about title */
-.about-title {
+/*subtitle */
+.subtitle {
     font-size: 60px;
     font-weight: 600;
     color:#ee567d;
@@ -252,18 +153,11 @@ header {
 /*-------------skills--------------*/
 
 /*skills section*/
-.my-skills {
-    position:relative;
-    height: 100vh;
-    padding:120px 200px;
+#skills {
+    padding: 30px 0;
 }
 
-/*skills title text*/
-.skills-title {
-    font-size: 60px;
-    font-weight: 600;
-    color:#ee567d;
-}
+
 
 /*skills grid layout*/
 .skills-list {
@@ -307,20 +201,12 @@ header {
 /*-------------portfolio--------------*/
 
 /*projects section*/
-.my-portfolio {
-    position:relative;
-    height: 100vh;
-    padding:120px 200px;
-}
-
-.portfolio-title {
-    font-size: 60px;
-    font-weight: 600;
-    color:#ee567d;
+#portfolio {
+    padding: 50px 0;
 }
 
 
-
+/*projects grid layout*/
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -331,12 +217,14 @@ header {
 
 
 
+/*project block*/
 .proj {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
+/*project image*/
 .proj img {
     width: 100%;
     border-radius: 10px;
@@ -344,6 +232,7 @@ header {
     transition: transform 0.5s;
 }
 
+/*project name*/
 .projname {
     font-weight: 500;
     font-size: 25px;
@@ -391,45 +280,51 @@ header {
 
 
 
-
-
-
-
-
 /*-------------connect with me--------------*/
 
-.my-contact {
-    position:relative;
-    height: 100vh;
-    padding:200px 200px;
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text inside .my-contact */
+#contact {
+    padding: 80px 0;
     
 }
 
 .contact-title {
     font-size: 60px;
     font-weight: 600;
-    color: #ee567d;
+    color:#ee567d;
+    text-align: center;
     margin: 0; 
 }
 
+
+
+/* Centered catchphrase */
 .contact-catchphrase {
     color: #fffefb;
-    font-weight: 20;
-    padding: 5px;
+    font-weight: 20; 
+    padding: 10px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Centered description */
 .con-desc {
     color: #fffefb;
     padding: 10px;
+    text-align: center; 
 }
 
 
+
 .con-btns {
-    padding: 20px;
+    padding: 25px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
 }
 
 
@@ -453,7 +348,7 @@ header {
 
 /*1st button*/
 .email-btn {
-    margin-left: 30px;
+    margin: 0;
     padding: 10px 30px;
     transition: .5s;
 }
@@ -465,7 +360,7 @@ header {
 
 /*2nd button*/
 .github-btn {
-    margin-left: 30px;
+    margin: 0;
     padding: 10px 30px;
     transition: .5s;
 }
@@ -477,11 +372,96 @@ header {
 
 /*2nd button*/
 .linkedin-btn {
-    margin-left: 30px;
+    margin: 0;
     padding: 10px 30px;
     transition: .5s;
 }
 
 .linkedin-btn:hover {
     transform: translateY(-5px);
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/* ------------media queries -------------*/
+
+
+@media only screen and (max-width: 600px){
+    .header-text {
+        margin-top: 40%;
+        font-size: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        color: #fffefb;
+    }
+
+    nav ul {
+        background: #46525B;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        color: #fffefb;
+    }
+
+    nav ul {
+        background: #46525B;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
