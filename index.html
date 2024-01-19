@@ -16,13 +16,15 @@
     <div id = "header">
         <div class="container">
             <nav>
-                <img src = "images/logo.png" class = "logo ">
-                <ul id = "sidebar">
-                    <li><a href = "#header">Home</a></li>
-                    <li><a href = "#about">About Me</a></li>
-                    <li><a href = "#skills">Skills</a></li>
-                    <li><a href = "#portfolio">Portfolio</a></li>
-                    <li><a href = "#contact">Connect</a></li>
+                <div class="navbarlogo">
+                    <img src = "images/logo.png" class = "logo ">
+                </div>
+                <ul id = "navbar">
+                    <li class = "navElement"><a href = "#header">Home</a></li>
+                    <li class = "navElement"><a href = "#about">About Me</a></li>
+                    <li class = "navElement"><a href = "#skills">Skills</a></li>
+                    <li class = "navElement"><a href = "#portfolio">Portfolio</a></li>
+                    <li class = "navElement"><a href = "#contact">Connect</a></li>
                     <i class="fa-solid fa-xmark" onclick = "closesidebar()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick = "opensidebar()"></i>
@@ -31,8 +33,8 @@
 
     <!-------------home-------------->
             <div class="header-text">
-                <p>A 2nd Year BS Computer Science Student</p>
-                <h1>Hi, I'm <span>Wince Larcen.</span></h1>
+                <p class = "header-title">A 2nd Year BS Computer Science Student</p>
+                <h1 class = "header-name">Hi, I'm <span>Wince Larcen.</span></h1>
                 <p class = "catchphrase">Solving puzzles in code, creating solutions in pixels.</p>
             </div>
         </div>
@@ -78,7 +80,7 @@
         <div class="container">
             <h1 class="subtitle">My Skills</h1>
             <div class="skills-list">
-                <div class = "webdev">
+                <div class = "skillbox">
                     <i class="fa-brands fa-html5"></i>
                     <h2 class = "skillname">Fullstack Web Development</h2>
                     <p><br>☑ HTML<br>
@@ -90,7 +92,7 @@
                     
                 
                 </div>
-                <div class = "appdev">
+                <div class = "skillbox">
                     <i class="fa-brands fa-app-store"></i>
                     <h2 class = "skillname">Application Development</h2>
                     <p><br>☑ C#<br>
@@ -101,7 +103,7 @@
                     
                 </div>
                 
-                <div class = "ui">
+                <div class = "skillbox">
                     <i class="fa-brands fa-figma"></i>
                     <h2 class = "skillname">UI/UX Design</h2>
                     <p><br>☑ Figma<br>
@@ -133,7 +135,7 @@
                     <img src = "images/4pics.png">
                     <div class="layer">
                         <h3 class = "projname">4Pics 1Word - Python Edition</h3>
-                        <p>Our Final Project for IT101-2L, A 4 Pics 1 Word Game using OOP Principles & Python Tkinter</p>
+                        <p class = "proj-desc">Our Final Project for IT101-2L, A 4 Pics 1 Word Game using OOP Principles & Python Tkinter</p>
                         <a href = "https://github.com/wncelrcn/IT101-2L_4Pics-1-Word">View the project on: <br><i class="fa-brands fa-github"></i></a>
                     </div>
                     
@@ -216,7 +218,7 @@
 
     <!----------------javascript for hamburger functionality------------>
     <script>
-        var sidebar = document.getElementById("sidebar");
+        var sidebar = document.getElementById("navbar");
 
 
         function opensidebar(){
@@ -230,6 +232,68 @@
     </script>
 
 
+
+    <!----------------javascript for animate on scroll---------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        
+        const animate = ScrollReveal();
+
+        animate.reveal('.navbarlogo', {
+            duration: 2500,
+            origin: 'left',
+            distance: '700px',
+            
+        });
+
+        animate.reveal('.header-name, .header-title, .catchphrase, .subtitle, .contact-title, .contact-catchphrase, .con-desc, .con-btns', {
+            duration: 3000,
+            origin: 'top',
+            distance: '100px',
+            reset: 'true'
+        });
+
+        animate.reveal('.about-col-1', {
+            duration: 2500,
+            origin: 'left',
+            distance: '700px',
+            reset: 'true'
+        });
+
+        animate.reveal('.about-col-2', {
+            duration: 2500,
+            origin: 'right',
+            distance: '100px',
+            reset: 'true'
+        });
+
+        animate.reveal('.about-col-2', {
+            duration: 2500,
+            origin: 'right',
+            distance: '100px',
+            reset: 'true'
+        });
+
+        animate.reveal('.navElement', {
+        interval: 400,
+        duration: 1000,
+        origin: 'top',
+        distance: '40px',
+        });
+
+        animate.reveal('.skillbox, .proj', {
+        interval: 400,
+        duration: 1000,
+        origin: 'top',
+        distance: '40px',
+        reset: 'true'
+        });
+
+
+
+    
+
+    </script>
 
 </body>
 </html>
