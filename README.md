@@ -2,9 +2,9 @@
 
 <h3>Guide Questions</h3>
 
-<h5>How did your website accomplish each item in the criteria?</h5>
-<p> I used HTML, CSS, and some Javascript for this website for some functionalities. Moreover, I applied the use of various CSS Selectors and Styles, as well the use of Flexbox and Grid. <br>
-Additionally, my website has animations and transitions and also has a mobile and tablet-friendly layout.</p>
+<h5><strong>How did your website accomplish each item in the criteria?</strong></h5>
+<p><li>I used HTML, CSS, and some Javascript for this website for some functionalities. Moreover, I applied the use of various CSS Selectors and Styles, as well the use of Flexbox and Grid. <br>
+Additionally, my website has animations and transitions and also has a mobile and tablet-friendly layout.</li></p>
 <br>
 <h5>Where could the concepts discussed in class be seen on your website?</h5>
 <p>For the website structure, </p>
