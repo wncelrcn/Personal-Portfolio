@@ -14,7 +14,7 @@
 
     <!-------------header & navbar -------------->
     <div id = "header">
-        <div class="container">
+        <div class="nav-container">
             <nav>
                 <div class="navbarlogo">
                     <img src = "images/logo.png" class = "logo ">
@@ -30,7 +30,8 @@
                 <i class="fa-solid fa-bars" onclick = "opensidebar()"></i>
             </nav>
 
-
+        </div>
+        <div class="container">
     <!-------------home-------------->
             <div class="header-text">
                 <p class = "header-title">A 2nd Year BS Computer Science Student</p>
@@ -274,14 +275,8 @@
             reset: 'true'
         });
 
-        animate.reveal('.navElement', {
-        interval: 400,
-        duration: 1000,
-        origin: 'top',
-        distance: '40px',
-        });
 
-        animate.reveal('.skillbox, .proj', {
+        animate.reveal('.proj', {
         interval: 400,
         duration: 1000,
         origin: 'top',
@@ -289,9 +284,15 @@
         reset: 'true'
         });
 
+        animate.reveal('.skills-list', {
+        duration: 2500,
+        origin: 'bottom',
+        distance: '40px',
+        reset: 'true'
+        });
 
 
-    
+        
 
     </script>
 
