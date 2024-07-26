@@ -1,363 +1,792 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wince Larcen Rivano</title>
-    <link rel="icon" type="image/x-icon" href="/images/webicon.ico">
-    <link rel = "stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/2ff225eb8b.js" crossorigin="anonymous"></script>
-    
+    <script src="scripts.js"></script>
+
+
 </head>
 
 <body>
-
-    <!-------------header & navbar -------------->
-    <div id = "header">
-        <div class="nav-container">
-            <nav>
-                <div class="navbarlogo">
-                    <img src = "images/logo.png" class = "logo ">
+    <!-- Header and Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero">Wince Larcen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certifications">Certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#connect">Connect</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul id = "navbar">
-                    <li class = "navElement"><a href = "#header">Home</a></li>
-                    <li class = "navElement"><a href = "#about">About Me</a></li>
-                    <li class = "navElement"><a href = "#skills">Skills</a></li>
-                    <li class = "navElement"><a href = "#portfolio">Portfolio</a></li>
-                    <li class = "navElement"><a href = "#contact">Connect</a></li>
-                    <i class="fa-solid fa-xmark" onclick = "closesidebar()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick = "opensidebar()"></i>
-            </nav>
+            </div>
+        </nav>
+    </header>
 
-        </div>
-        <div class="container">
-    <!-------------home-------------->
-            <div class="header-text">
-                <p class = "header-title">A 2nd Year BS Computer Science Student</p>
-                <h1 class = "header-name">Hi, I'm <span>Wince Larcen.</span></h1>
-                <p class = "catchphrase">Solving puzzles in code, creating solutions in pixels.</p>
+
+    <!-- Hero Section -->
+    <div class="container-fluid p-5 mt-5" id="hero">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero">
+                    <div id="hero-text">
+                        <p id="hero-title">A 2nd Year BS Computer Science Student</p>
+                        <h1 id="hero-name">Hi, I'm <span>Wince Larcen.</span></h1>
+                        <p id="catchphrase">Solving puzzles in code, creating solutions in pixels.</p>
+                    </div>
+                    <div class="hero-btns btn-group-lg">
+                        <button type="button" class="btn btn-primary bsb-btn-xl rounded-pill me-3" id="resume-btn"><a
+                                href="https://drive.google.com/file/d/1QAi1irNe9gL8OdZTTXbqc0GVc9id4BTf/view?usp=sharing" target="blank"><i
+                                    class="fa-solid fa-file"></i> Resume</a></button>
+                        <button type="button" class="btn btn-outline-primary bsb-btn-xl rounded-pill me-3"
+                            id="linkedin-btn"><a href="https://www.linkedin.com/in/wincelarcen/" target="blank"><i
+                                    class="fab fa-linkedin"></i> LinkedIn</a></button>
+                        <button type="button" class="btn btn-outline-primary bsb-btn-xl rounded-pill me-3"
+                            id="github-btn">
+                            <a href="https://github.com/wncelrcn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a></button>
+                        <button type="button" class="btn btn-outline-primary bsb-btn-xl rounded-pill me-3"
+                            id="email-btn">
+                            <a href="mailto:rivanowincelarcen@gmail.com">
+                                <i class="far fa-envelope"></i> Email
+                            </a></button>
+                    </div>
+                    
+                </div>
             </div>
         </div>
+    </div>
 
+    <!-- About Me Section -->
+    <div class="container-fluid mt-5 pt-5 offset-section" id="about">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about p-5">
+                    <div class="about-content row">
+                        <div class="col-lg-4 mt-5 about-img">
+                            <img class="img-fluid" src="images/user.png" alt="" onmouseover="hover(this)"
+                                onmouseout="unhover(this)">
+                        </div>
+                        <div class="col-lg-8 mt-3 p-5 about-text">
+                            <h1 class="section-title">/ About Me</h1>
+                            <p class="desc mt-5">I am currently a 2nd Year Computer Science Student at Mapúa Malayan
+                                Colleges Laguna. <br>
+                                <br>
+                                🚀 I'm an aspiring Software Engineer, iOS Developer, and a Fullstack Web Developer! 🚀
+                                <br>
+                                <br>
+                                🤔 I have a great interest in Software Development, iOS Development, Fullstack Web
+                                Development, and UI/UX Designing! <br>
+                                <br>
+                                💗 I also love K-Pop, playing video games, watching different kinds of movies & series,
+                                and also sleeping! 💗
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 pt-5 offset-section" id="skills">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="skills p-5 mt-3">
+                    <h1 class="section-title">/ My Toolkit</h1>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">Programming Languages</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="/icons/python.png" alt="Python logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/csharp.png" alt="C# logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/js.png" alt="JavaScript logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/swift.png" alt="Swift logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">Front-end Development</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="icons/html.png" alt="Html logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/css.png" alt="css logo" class="img-fluid mx-2" style="width: 60px;">
+                                    <img src="icons/js.png" alt="JavaScript logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/bootstrap.png" alt="bootstrap logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/sass.png" alt="sass logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/react.png" alt="react logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">Back-end Development</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="icons/sqlserver.png" alt="sqlserver logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/mysql.png" alt="mysql logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/php.png" alt="php logo" class="img-fluid mx-2" style="width: 60px;">
+                                    <img src="icons/postman.png" alt="postman logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">UI/UX Designing and Graphics Design</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="icons/figma.png" alt="figma logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/ps.png" alt="ps logo" class="img-fluid mx-2" style="width: 60px;">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">Mobile App Development</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="icons/swift.png" alt="swift logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/swiftui.png" alt="swiftui logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/android.png" alt="android logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/xamarin.png" alt="xamarin logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="skill-category p-5 border">
+                                <h2 id="skill-title">Project Management and Version Control</h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="icons/trello.png" alt="trello logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+                                    <img src="icons/git.png" alt="git logo" class="img-fluid mx-2" style="width: 60px;">
+                                    <img src="icons/github.png" alt="github logo" class="img-fluid mx-2"
+                                        style="width: 60px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+
+    <div class="container-fluid mt-5 pt-5 offset-section" id="projects">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="projects p-5">
+                    <h1 class="section-title">/ My Projects</h1>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/IT101-2L_4Pics-1-Word" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/4pycs.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">4Pycs1Word</h3>
+                                    <p class="card-text">A 4 Pics 1 Word Game recreated using Python Tkinter.</p>
+                                    <div class="tags">
+                                        <span class="tag">Python</span>
+                                        <span class="tag">TKinter</span>
+                                        <span class="tag">OOP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.figma.com/proto/oNrph44LtbwUmXTyAKSWac/Mapua-MCL-Bus-Tap?page-id=403%3A1650&type=design&node-id=434-1920&viewport=323%2C92%2C0.02&scaling=scale-down&starting-point-node-id=434%3A1920&show-proto-sidebar=1&mode=design&t=qLHViUeHiOUDu1ON-1" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/bustap.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Mapúa MCL Bus Tap</h3>
+                                    <p class="card-text">A Unified Shuttle Service Booking Mobile Application Prototype
+                                        for Mapúa MCL students.</p>
+                                    <div class="tags">
+                                        <span class="tag">Figma</span>
+                                        <span class="tag">UI/UX Design</span>
+                                        <span class="tag">Prototyping</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/IT111L_PixelMazeGame" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/pixelquest.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Pixel Quest</h3>
+                                    <p class="card-text">A classic 2D adventure rogue-like game that takes players
+                                        through a series of intricate mazes with challenges, mini-games, and secrets.
+                                    </p>
+                                    <div class="tags">
+                                        <span class="tag">C#</span>
+                                        <span class="tag">WinForms</span>
+                                        <span class="tag">OOP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/wncelrcn.github.io" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/portfolio.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Personal Portfolio</h3>
+                                    <p class="card-text">A website that showcases my skills, accomplished projects,
+                                        certifications, and portfolio.</p>
+                                    <div class="tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a href="https://www.canva.com/design/DAGAbQzi6E4/OLF8hlegg01uq3ngW_-GXA/edit?utm_content=DAGAbQzi6E4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/shuttleease.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">ShuttleEase</h3>
+                                    <p class="card-text">A Startup Business Ideation that aims to build a Shuttle
+                                        Service Booking App for students.</p>
+                                    <div class="tags">
+                                        <span class="tag">Technopreneurship</span>
+                                        <span class="tag">Start-ups</span>
+                                        <span class="tag">Ideation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/Telelet" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/telelet.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Telelet</h3>
+                                    <p class="card-text">A Social Media Website that looks and feels like Twitter.</p>
+                                    <div class="tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">NodeJS</span>
+                                        <span class="tag">APIs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/JLR-FoodProducts-Trading-WebApp" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/osims.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">OSIMS</h3>
+                                    <p class="card-text">An Order, Sales, and Inventory Management Website for JLR Food
+                                        Products Trading.</p>
+                                    <div class="tags">
+                                        <span class="tag">WebForms</span>
+                                        <span class="tag">SQL Server</span>
+                                        <span class="tag">ADO.NET</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/TrendLease" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/trendlease.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">TrendLease</h3>
+                                    <p class="card-text">A Fashion Renting Service WebApp.</p>
+                                    <div class="tags">
+                                        <span class="tag">WebForms</span>
+                                        <span class="tag">SQL Server</span>
+                                        <span class="tag">ADO.NET</span>
+                                        <span class="tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://drive.google.com/file/d/1d2Ht0118uzwjjWE7GmBVd4QKGhh-_7VO/view?usp=sharing" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/jlr.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">JLR OSIMS Project</h3>
+                                    <p class="card-text">A Comprehensive Guide to Project Management for JLR Food
+                                        Products Trading's New OSIMS.</p>
+                                    <div class="tags">
+                                        <span class="tag">Project Management</span>
+                                        <span class="tag">Trello</span>
+                                        <span class="tag">Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/XOXO" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/xoxo.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">XOXO</h3>
+                                    <p class="card-text">A Basic Tic-Tac-Toe iOS Game made using SwiftUI.</p>
+                                    <div class="tags">
+                                        <span class="tag">iOS Dev</span>
+                                        <span class="tag">Swift</span>
+                                        <span class="tag">SwiftUI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://github.com/wncelrcn/ClassMate" class="card-link">
+                            <div class="card h-100 proj-card">
+                                <img class="card-img-top" src="images/classmate.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3 class="card-title">ClassMate</h3>
+                                    <p class="card-text">A Student Companion App made using Android Xamarin.</p>
+                                    <div class="tags">
+                                        <span class="tag">Android Dev</span>
+                                        <span class="tag">Xamarin</span>
+                                        <span class="tag">MySQL</span>
+                                        <span class="tag">PHP</span>
+                                        <span class="tag">APIs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+
+
+    <!-- Certifications Section -->
+    <div class="container-fluid mt-5 pt-5 offset-section" id="certifications">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="certifications p-5 mt-3">
+                    <h1 class="section-title">/ Certifications</h1>
+
+                    <!-- Cloud Computing Certifications -->
+                    <h2 class="mt-5">Cloud Computing Certifications</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cloud Computing Foundations: Cloud Computing
+                                        Fundamentals</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9180528?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+                                        class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cloud Computing Foundations: Infrastructure in Google
+                                        Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9378066?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cloud Computing Foundations: Networking & Security in
+                                        Google Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9384110?qlcampaign=1p-EDUCR-GCCF-MMCL-STUDENT-PH-APR2024-27&utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Google Cloud Computing Foundations: Data, ML, and AI in
+                                        Google Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9403909?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Implement Load Balancing on Compute Engine</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9533722?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Set Up an App Dev Environment on Google Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9542534?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Build a Secure Google Cloud Network</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9559758?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prepare Data for ML APIs on Google Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9566280?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Gen AI Certifications -->
+                    <h2 class="mt-5">Generative AI Certifications</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+                        <!-- Certification Card 1 -->
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Large Language Models</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9556824?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Generative AI</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9556866?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Responsible AI</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9556909?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Responsible AI: Applying AI Principles with Google Cloud</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9566318?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Image Generation</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9566346?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Attention Mechanism</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9951576?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Encoder-Decoder Architecture</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9951691?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Vertex AI Studio</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9955343?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Create Image Captioning Models</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9955947?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Transformer Models and BERT Model</h5>
+                                    <p class="card-text">Google</p>
+                                    <a href="https://www.cloudskillsboost.google/public_profiles/962bc156-2b74-456e-98d5-1dc8461a9cea/badges/9955998?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Python Certifications -->
+                    <h2 class="mt-5">Python Certifications</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to Programming Using Python</h5>
+                                    <p class="card-text">CodeChum</p>
+                                    <a href="https://www.linkedin.com/in/wincelarcen/details/certifications/1705245995978/single-media-viewer/?profileId=ACoAACDQM20BbLMQDhcJQEl9poqbXq5NwMHhpCE" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start-ups Certifications -->
+                    <h2 class="mt-5">Start-ups Certifications</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+
+                        <div class="col">
+                            <div class="card border-primary cert-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Getting Started with Technology Startups</h5>
+                                    <p class="card-text">University of Colorado Boulder</p>
+                                    <a href="https://www.coursera.org/account/accomplishments/records/HN99XSVV99Q4" class="btn btn-link">View Certificate <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Connect Section -->
+
+    <div class="container-fluid mt-5 pt-5 offset-section" id="connect">
+        <div id="contact">
+            <div class="container">
+                <h1 class="contact-title">
+                    / Connect with Me
+                </h1>
+                <h2 class="contact-catchphrase mt-5">
+                    Let's collaborate and create something meaningful!
+                </h2>
+                <p class="con-desc mt-2">
+                    Don't hesitate to contact me if you're in need of a developer, <br>
+                    have any inquiries, or simply wish to connect.
+                </p>
+                <div class="con-btns">
+                    <div class="email-btn">
+                        <a href="mailto:rivanowincelarcen@gmail.com">
+                            <i class="far fa-envelope"></i> Email
+                        </a>
+                    </div>
+                    <div class="github-btn">
+                        <a href="https://github.com/wncelrcn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <div class="linkedin-btn">
+                        <a href="https://www.linkedin.com/in/wincelarcen/" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="footer text-center p-3">
+                        <p class="footer-title h5 mb-3 text-secondary">Built and Designed by Wince Larcen Rivano.</p>
+                        <p class="footer-desc mt-2 mb-5 small text-secondary">All Rights Reserved. ©</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
-    <!-------------about-------------->
-    <div id = "about">
-
-        <div class = "container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img class="me" src="images/user.png" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p class = "desc">I am currently a 2nd Year Computer Science Student at Mapúa Malayan Colleges Laguna. <br>
-                        <br>
-                        🚀 I'm an aspiring Software Engineer, IOS Developer, and a Fullstack Web Developer! 🚀 <br> 
-                        <br>
-                        🤔 I have a great interest in Software Development, IOS Development, Fullstack Web Development, and UI/UX Designing! <br>
-                        <br>
-                        💗 I also love K-Pop, playing video games, watching different kinds of movies & series, and also sleeping! 💗
-                    </p>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    
-        
-        
-    <!-------------skills-------------->
-
-
-
-    <div id = "skills">
-        <div class="container">
-            <h1 class="subtitle">My Skills</h1>
-            <div class="skills-list">
-                <div class = "skillbox">
-                    <i class="fa-brands fa-html5"></i>
-                    <h2 class = "skillname">Fullstack Web Development</h2>
-                    <p><br>☑ HTML<br>
-                        ☑ CSS <br>
-                        ☑ JavaScript <br>
-                        ☑ Bootstrap <br>
-                        ☑ Node.js <br>
-                        ☑ ASP.NET WebForms <br>
-                        ☑ SQL 
-
-                    
-                    </p>
-                    
-                
-                </div>
-                <div class = "skillbox">
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2 class = "skillname">Application Development</h2>
-                    <p><br>☑ C#<br>
-                        ☑ C++ <br>
-                        ☑ Python Tkinter <br>
-                        ☑ Swift
-
-                    </p>
-                    
-                    
-                </div>
-                
-                <div class = "skillbox">
-                    <i class="fa-brands fa-figma"></i>
-                    <h2 class = "skillname">UI/UX Design</h2>
-                    <p><br>☑ Figma<br>
-                        ☑ Adobe Photoshop <br>
-                        ☑ Adobe Illustrator <br>
-                        ☑ Wireframing <br>
-                        ☑ Prototyping 
-                        
-                    </p>
-                    
-                
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    
-
-    <!-------------portfolio-------------->
-
-
-    <div id = "portfolio">
-        <div class="container">
-            <h1 class = "subtitle">My Projects</h1>
-            <div class="project-list">
-                <div class="proj">
-                    <img src = "images/4pics.png">
-                    <div class="layer">
-                        <h3 class = "projname">4Pics 1Word - Python Edition</h3>
-                        <p class = "proj-desc">Our Final Project in IT101-2L, A 4 Pics 1 Word Game using OOP Principles & Python Tkinter</p>
-                        <a href = "https://github.com/wncelrcn/IT101-2L_4Pics-1-Word">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    
-                </div>
-
-                <div class="proj">
-                    <img src = "images/bus tap.png">
-                    <div class="layer">
-                        <h3 class = "projname">MMCL Bus Tap</h3>
-                        <p>Our Final Project in CS110P, a Unified Shuttle Service Booking Mobile Application for Mapúa MCL students</p>
-                        <a href = "https://www.figma.com/proto/oNrph44LtbwUmXTyAKSWac/Mapua-MCL-Bus-Tap?page-id=403%3A1650&type=design&node-id=434-1920&viewport=323%2C92%2C0.02&scaling=scale-down&starting-point-node-id=434%3A1920&show-proto-sidebar=1&mode=design&t=qLHViUeHiOUDu1ON-1">View the project on: <br><i class="fa-brands fa-figma"></i></a>
-                    </div>
-                </div>
-
-                <div class="proj">
-                    <img src = "images/pixelquest.png">
-                    <div class="layer">
-                        <h3 class = "projname">Pixel Quest</h3>
-                        <p>"Pixel Quest: Lost in the Labyrinth" is a classic 2D adventure game that takes players through a series of intricate mazes with challenges, mini-games, and secrets. </p>
-                        <a href = "https://github.com/wncelrcn/IT111L_PixelMazeGame">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="proj">
-                    <img src = "images/portfolio.png">
-                    <div class="layer">
-                        <h3 class = "projname">Personal Website</h3>
-                        <p>A website that showcases my skills, accomplished projects, certifications, and portfolio.</p>
-                        <a href = "https://github.com/wncelrcn/wncelrcn.github.io">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="proj">
-                    <img src = "images/shuttleease.png">
-                    <div class="layer">
-                        <h3 class = "projname">ShuttleEase</h3>
-                        <p>Our Startup Business Idea in Technopreneurship, which aims to build a Shuttle Service Booking Application for students and universities around Laguna. </p>
-                        <a href = "https://www.canva.com/design/DAGAbQzi6E4/OLF8hlegg01uq3ngW_-GXA/edit?utm_content=DAGAbQzi6E4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">View the project on: <br><i class="fa-solid fa-file-powerpoint"></i></a>
-                    </div>
-                </div>
-
-                <div class="proj">
-                    <img src = "images/telelet.png">
-                    <div class="layer">
-                        <h3 class = "projname">Telelet</h3>
-                        <p>Our Twitter Clone Project for IT114L, made using basic front-end technologies such as HTML, CSS, and JavaScript, and back-end technologies such as Node.js, TwitterClone Api and News Api. </p>
-                        <a href = "https://github.com/wncelrcn/Telelet">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="proj">
-                    <img src = "images/jlrtrading.png">
-                    <div class="layer">
-                        <h3 class = "projname">Order, Sales, and Inventory Management Website</h3>
-                        <p>Our final project in CS107L, An Order, Sales, and Inventory Management Website for JLR Food Products Trading. </p>
-                        <a href = "https://github.com/wncelrcn/JLR-FoodProducts-Trading-WebApp">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="proj">
-                    <img src = "images/trendlease.png">
-                    <div class="layer">
-                        <h3 class = "projname">TrendLease</h3>
-                        <p>Our Final Project in IT114L, A Fashion Renting Web App, made using ASP.NET WebForms, Bootstrap, CSS, and SQL. </p>
-                        <a href = "https://github.com/wncelrcn/TrendLease">View the project on: <br><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-------------connect with me-------------->
-    <div id = "contact">
-        <div class="container">
-            <h1 class = "contact-title">
-                Connect with Me
-            </h1>
-            <h2 class = "contact-catchphrase">
-                Let's collaborate and create something meaningful!
-            </h2>
-            <p class = "con-desc">
-                Don't hesitate to contact me if you're in need of a developer, <br>
-                have any inquiries, or simply wish to connect.
-            </p>
-            <div class="con-btns">
-                <div class="email-btn">
-                    <a href="mailto:rivanowincelarcen@gmail.com">
-                        <i class="far fa-envelope"></i> Email
-                    </a>
-                </div>
-                <div class="github-btn">
-                    <a href="https://github.com/wncelrcn" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                <div class="linkedin-btn">
-                    <a href="https://www.linkedin.com/in/wincelarcen/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                
-                
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!----------------javascript for hamburger functionality------------>
-    <script>
-        var sidebar = document.getElementById("navbar");
-
-
-        function opensidebar(){
-            sidebar.style.right="0";
-        }
-
-        function closesidebar(){
-            sidebar.style.right="-200px";
-        }
-
-    </script>
-
-
-
-    <!----------------javascript for animate on scroll---------------->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        
-        const animate = ScrollReveal();
-
-        animate.reveal('.navbarlogo', {
-            duration: 2500,
-            origin: 'left',
-            distance: '700px',
+    <!-- ScrollReveal JavaScript Library -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
             
-        });
+            const animate = ScrollReveal();
+    
+            animate.reveal('.navbar-brand', {
+                duration: 2500,
+                origin: 'left',
+                distance: '700px',
+                
+            });
 
-        animate.reveal('.header-name, .header-title, .catchphrase, .subtitle, .contact-title, .contact-catchphrase, .con-desc, .con-btns', {
-            duration: 3000,
-            origin: 'top',
-            distance: '100px',
-            reset: 'true'
-        });
-
-        animate.reveal('.about-col-1', {
-            duration: 2500,
-            origin: 'left',
-            distance: '700px',
-            reset: 'true'
-        });
-
-        animate.reveal('.about-col-2', {
-            duration: 2500,
-            origin: 'right',
-            distance: '100px',
-            reset: 'true'
-        });
-
-        animate.reveal('.about-col-2', {
-            duration: 2500,
-            origin: 'right',
-            distance: '100px',
-            reset: 'true'
-        });
-
-
-        animate.reveal('.proj', {
-        interval: 400,
-        duration: 1000,
-        origin: 'top',
-        distance: '40px',
-        reset: 'true'
-        });
-
-        animate.reveal('.skills-list', {
-        duration: 2500,
-        origin: 'bottom',
-        distance: '40px',
-        reset: 'true'
-        });
-
-
+            animate.reveal('.nav-item', {
+                duration: 2500,
+                origin: 'right',
+                distance: '700px',
+                
+            });
+    
+            animate.reveal('#hero-name, #hero-title, #catchphrase, .subtitle, .contact-title, .contact-catchphrase, .con-desc, .hero-btns, .con-btns, .footer, .section-title', {
+                duration: 3000,
+                origin: 'top',
+                distance: '100px',
+                reset: 'true'
+            });
+    
+            animate.reveal('.about-img, .about-text', {
+                duration: 2500,
+                origin: 'left',
+                distance: '700px',
+                reset: 'true'
+            });            
         
-
-    </script>
-
-
-    <!----------------javascript for changing of ---------------->
-    <script>
-    function hover(element) {
-    element.setAttribute('src', 'images/user-hover.png');
-    }
-
-    function unhover(element) {
-    element.setAttribute('src', 'images/user.png');
-    }
-    </script>
-
+            animate.reveal('#certifications, #projects, #skills', {
+            duration: 2500,
+            origin: 'bottom',
+            distance: '40px',
+            reset: 'true'
+            });
+    
+        </script>
+            
+    
+    
 </body>
+
 </html>

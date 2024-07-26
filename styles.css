@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+    margin: 0;
+    
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    
+}
+
+.offset-section {
+    scroll-margin-top: 100px; 
+}
+
+/*-------------NavBar--------------*/
+
+.navbar {
+    box-shadow: 0px 5px 10px 0px #82828249;
+}
+
+.navbar-brand {
+    color: #f84f7f !important; 
+}
+
+.nav-link {
+    color: #000000 !important; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    font-size: 1rem;
+}
+
+
+.nav-link:hover {
+    color: #f84f7f !important; 
+}
+
+/*-------------Hero Section--------------*/
+
+#hero-text {
+    margin-top: 30vh;
+    font-size: 2rem;
+    color:#0c051a;
+}
+
+#hero-text h1 {
+    font-size: 5rem;
+    margin-top: 2vh;
+    color:#0c051a;
+}
+
+#hero-text h1 span {
+    background: -webkit-linear-gradient(#F8D6DF, #ED87A4, #f84f7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+#catchphrase {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    color:#000000;
+}
+
+.hero-btns a {
+    
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+
+
+#resume-btn {
+    background: #CE4B70;
+    border: 2px solid #CE4B70;
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+#resume-btn a {
+    color: #ffffff;
+}
+
+#resume-btn:hover {
+    background-color: transparent;
+    transform: translateY(-5px);
+}
+
+#resume-btn:hover a {
+    color: #000000;
+}
+
+#email-btn {
+    
+    border: 2px solid #F8D6DF;
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+
+
+#email-btn:hover{
+    background-color: #F8D6DF;
+    transform: translateY(-5px);
+}
+
+
+
+#github-btn {
+    border: 2px solid #F8D6DF;
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+#github-btn:hover {
+    background-color: #F8D6DF;
+    transform: translateY(-5px);
+}
+
+
+
+#linkedin-btn {
+    border: 2px solid #F8D6DF;
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+#linkedin-btn:hover {
+    background-color: #F8D6DF;
+    transform: translateY(-5px);
+}
+
+/*------About Me--------*/
+
+#about {
+    margin-top: 30 vh;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color:#000000;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    color:#f84f7f;
+}
+
+
+
+.about-img img {
+    width: 125%;
+    border-radius: 15px;
+    transition: .5s;
+
+}
+
+.about-img img:hover {
+    transform: translateY(-10px);
+}
+
+
+/*------Skills Section--------*/
+
+.skill-category {
+    border-color: #FAEFF2 !important;
+    border-radius: 10px;
+}
+
+#skill-title {
+    color:#000000;
+}
+
+
+
+
+
+
+/*------Projects Section--------*/
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tag {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #F84F7F;
+    
+    border-radius: 2rem;
+    color: #000000;
+    font-size: 0.875em;
+}
+
+.proj-card {
+    border: 1px solid #FAEFF2;
+    background: #FAEFF2;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.proj-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+    text-decoration: none;
+    
+}
+
+/*-----Certifications Section-------*/
+
+.cert-card {
+    border: 2px solid #F4D6DD !important;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    
+}
+.cert-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+    color: #ED87A4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.card a:hover {
+    color: #F84F7F;
+}
+
+
+/*-------Connect with me ---------*/
+
+#contact {
+    padding: 65px 0;
+    
+}
+
+.contact-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color:#F84F7F;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.contact-catchphrase {
+    color: #000000;
+    font-weight: 20; 
+    padding: 10px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.con-desc {
+    color: #000000;
+    padding: 10px;
+    text-align: center; 
+}
+
+
+
+.con-btns {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+
+.con-btns a {
+    
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #CE4B70; 
+    border-radius: 10px;
+    border: 2px solid #CE4B70;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+
+
+
+.email-btn {
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.email-btn:hover {
+    transform: translateY(-5px);
+    color: #000000; 
+}
+
+
+.github-btn {
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.github-btn:hover {
+    transform: translateY(-5px);
+    color: #000000; 
+    
+}
+
+
+
+.linkedin-btn {
+    margin: 0;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.linkedin-btn:hover {
+    transform: translateY(-5px);
+    color: #000000; 
+}
+
